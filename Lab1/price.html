@@ -10,19 +10,16 @@
             margin: 0;
             padding: 20px;
         }
-
         h1 {
             color: #d32f2f;
             text-align: center;
             margin-bottom: 20px;
         }
-
         .logo {
             display: block;
             margin: 0 auto 30px;
             max-width: 180px;
         }
-
         .content {
             color: blue;
             font-style: italic;
@@ -31,7 +28,6 @@
             max-width: 860px;
             margin: 0 auto 35px;
         }
-
         table {
             margin-left: auto;
             margin-right: 0;
@@ -39,30 +35,38 @@
             border-spacing: 4px;
             border: 3px solid #1976d2;
             font-size: 1.05em;
+            width: 100%;
+            max-width: 860px;
         }
-
         th, td {
             border: 2px solid #64b5f6;
             padding: 10px 16px;
+            vertical-align: middle;
         }
-
         th {
             background-color: #bbdefb;
             color: #0d47a1;
         }
-
+        .group {
+            background-color: #e8f0fe;
+            font-weight: bold;
+            text-align: center;
+        }
+        .note {
+            background-color: #fff8e1;
+            text-align: center;
+            font-style: italic;
+        }
         .nav-links {
             text-align: center;
             margin-top: 50px;
         }
-
         .nav-links a {
             margin: 0 40px;
             color: #1976d2;
             font-weight: bold;
             text-decoration: none;
         }
-
         .nav-links a:hover {
             text-decoration: underline;
         }
@@ -85,35 +89,58 @@
             <th>Ед. изм.</th>
             <th>Цена, бел. рубль</th>
         </tr>
+
+        <!-- Демонстрация rowspan и colspan -->
         <tr>
-            <td>Фундамент ленточный железобетонный</td>
+            <td rowspan="5" class="group">
+                Основные конструктивы<br>
+                <small>(стены и каркас)</small>
+            </td>
             <td>м³</td>
             <td>от 8 900</td>
         </tr>
         <tr>
-            <td>Кладка стен из газобетона D400 (400 мм)</td>
             <td>м²</td>
             <td>1 450</td>
         </tr>
         <tr>
-            <td>Металлокаркас + сэндвич-панели (утеплённые)</td>
             <td>м²</td>
             <td>от 4 200</td>
         </tr>
+        <tr>
+            <td>м²</td>
+            <td>2 350</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:center; background:#f0f4f8;">
+                (все варианты стен и каркаса выше)
+            </td>
+        </tr>
+
         <tr>
             <td>Кровля — металлочерепица с монтажом</td>
             <td>м²</td>
             <td>1 980</td>
         </tr>
+
         <tr>
             <td>Газобетонный блок D400 600×300×400</td>
             <td>шт.</td>
             <td>285</td>
         </tr>
+
         <tr>
             <td>Арматура А500С Ø12 мм</td>
             <td>т</td>
             <td>98 500</td>
+        </tr>
+
+        <!-- Горизонтальное объединение внизу -->
+        <tr>
+            <td colspan="3" class="note">
+                Цены ориентировочные на февраль 2026 года.<br>
+                Точная стоимость рассчитывается индивидуально после выезда специалиста.
+            </td>
         </tr>
     </table>
 

@@ -10,24 +10,18 @@
             margin: 0;
             padding: 25px;
         }
-
         h1 {
             color: #d32f2f;
             text-align: center;
         }
-
-        h2 {
+        h2, h3 {
             color: #b71c1c;
-            text-align: center;
-            margin-bottom: 35px;
         }
-
         .logo {
             display: block;
             margin: 20px auto 40px;
             max-width: 200px;
         }
-
         .content {
             color: blue;
             font-style: italic;
@@ -36,28 +30,40 @@
             max-width: 780px;
             margin: 0 auto 30px;
         }
-
         ul {
             list-style-type: square;
             color: #0d47a1;
             font-size: 1.1em;
             line-height: 1.7;
             max-width: 720px;
-            margin: 0 auto 50px;
+            margin: 0 auto 40px;
             padding-left: 40px;
         }
-
+        ol {
+            color: #0d47a1;
+            font-size: 1.1em;
+            line-height: 1.7;
+            max-width: 720px;
+            margin: 20px auto 40px;
+            padding-left: 40px;
+        }
+        .demo-block {
+            background-color: #f0f4f8;
+            padding: 20px;
+            border: 1px solid #bbdefb;
+            margin: 40px auto;
+            max-width: 780px;
+        }
         .nav-links {
             text-align: center;
+            margin-top: 60px;
         }
-
         .nav-links a {
             margin: 0 45px;
             color: #1976d2;
             font-weight: bold;
             text-decoration: none;
         }
-
         .nav-links a:hover {
             text-decoration: underline;
         }
@@ -74,6 +80,7 @@
         <p>Основные направления деятельности компании:</p>
     </div>
 
+    <!-- Обычный маркированный список (оставляем как был) -->
     <ul>
         <li>Строительство жилых домов из газобетона под ключ</li>
         <li>Возведение каркасных домов и бань</li>
@@ -85,6 +92,60 @@
         <li>Аренда бетононасоса и автобетоносмесителя</li>
         <li>Проектирование и согласование ИЖС и коммерческих объектов</li>
     </ul>
+
+    <div class="demo-block">
+        <h3>Демонстрация нумерованных и многоуровневых списков</h3>
+
+        <!-- Простой нумерованный список -->
+        <ol>
+            <li>Фундаментные работы</li>
+            <li>Возведение стен</li>
+            <li>Монтаж кровли</li>
+            <li>Отделочные работы</li>
+        </ol>
+
+        <!-- Многоуровневый нумерованный список (самый главный пример) -->
+        <ol type="1">
+            <li>Строительство дома под ключ
+                <ol type="a">
+                    <li>Подготовительный этап
+                        <ol type="i">
+                            <li>Геодезическая съёмка</li>
+                            <li>Получение разрешений</li>
+                            <li>Закупка материалов</li>
+                        </ol>
+                    </li>
+                    <li>Фундамент
+                        <ol type="i">
+                            <li>Ленточный</li>
+                            <li>Монолитная плита</li>
+                            <li>Свайно-ростверковый</li>
+                        </ol>
+                    </li>
+                    <li>Коробка дома
+                        <ol type="i">
+                            <li>Кладка газобетона</li>
+                            <li>Металлокаркас + сэндвич-панели</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>Кровельные работы
+                <ol type="a">
+                    <li>Металлочерепица</li>
+                    <li>Мягкая кровля</li>
+                    <li>Фальцевая кровля</li>
+                </ol>
+            </li>
+            <li>Продажа материалов
+                <ul>
+                    <li>Газобетонные блоки</li>
+                    <li>Арматура</li>
+                    <li>Кирпич</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
 
     <div class="nav-links">
         <a href="index.html">На главную</a>
