@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная работа №2</title>
+    <style>     
+    </style>
+</head>
+<body>
+
+<h1>Лабораторная работа №2<br>Создание и подключение простых скриптов</h1>
+
+<h2>Задание 1 — встроенный скрипт</h2>
+    <p>Нажмите кнопку, чтобы запустить проверку знаний (prompt + alert + if)</p>
+    
+    <button onclick="startTask1()">Запустить задание 1</button>
+    
+    <script>
+        function startTask1() 
+        {
+            let name = prompt("Введите свое имя", "Станислав");
+
+            if (!name || name.trim() === "") 
+            {
+                alert("Имя не введено");
+                return;
+            }
+
+            let sex = prompt ("Введите свой пол (м/ж)", "")
+            if (!sex || sex.trim() === "")
+            {
+                alert("Непрвильный пол");
+                return;
+            }
+
+            let age = prompt ("Введите свой возраст", "20")
+            
+            let answer = confirm(`Имя: ${name}\nПол: ${sex}\nВозраст: ${age}\nВсе верно?`)
+            if (answer)
+            {
+                alert(`Молодец,  ${name}`);
+                return;
+            }
+            else
+            {
+                alert("Ошибка в данных");
+                return;
+
+            }
+
+
+        }
+    </script>
+    <h2>Задание 2 — внешний скрипт (площадь круга)</h2>
+    <p>Скрипт находится в отдельном файле <code>script.js</code></p>
+    
+    <button onclick="startTask2()">Вычислить площадь круга</button>
+<script src="script.js"></script>
+
+</body>
+</html>
