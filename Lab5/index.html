@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Графики сотрудников</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 30px; 
+    }
+    .block { 
+      border: 2px solid #008888; 
+      padding: 15px; 
+      margin-bottom: 20px; 
+      border-radius: 8px; 
+    }
+    button { 
+      padding: 10px 15px; 
+      margin: 10px 5px; 
+      background: #008888; 
+      color: white; 
+      border: none; 
+      cursor: pointer; 
+    }
+    .result { 
+      border: 1px solid #008888; 
+      padding: 12px; 
+      margin: 15px 0; 
+      background: #f0ffff; 
+    }
+  </style>
+</head>
+<body>
+
+<h1>Рабочие графики сотрудников</h1>
+
+<h2>Анкета сотрудников</h2>
+<div id="forms"></div>
+
+<button onclick="saveAll()">Сохранить данные</button>
+<button onclick="putExamples()">Примеры</button>
+
+<hr>
+
+<h2>1. Работает ли в выбранный день?</h2>
+<select id="person1"></select>
+<select id="weekday">
+  <option value="ПН">ПН</option>
+  <option value="ВТ">ВТ</option>
+  <option value="СР">СР</option>
+  <option value="ЧТ">ЧТ</option>
+  <option value="ПТ">ПТ</option>
+  <option value="СБ">СБ</option>
+  <option value="ВС">ВС</option>
+</select>
+<button onclick="checkWorkDay()">Проверить</button>
+<div id="res1" class="result"></div>
+
+<hr>
+
+<h2>2. Сколько часов в месяц?</h2>
+<select id="person2"></select>
+<button onclick="countHours()">Рассчитать</button>
+<div id="res2" class="result"></div>
+
+<hr>
+
+<h2>3. Перекрытие времени</h2>
+С <input type="time" id="from" value="12:00"> по 
+<input type="time" id="to" value="14:00">
+<button onclick="findOverlap()">Найти</button>
+<div id="res3" class="result"></div>
+
+<hr>
+
+<h2>4. Нестандартный график (только выходные)</h2>
+<button onclick="showWeekendWorkers()">Показать</button>
+<div id="res4" class="result"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

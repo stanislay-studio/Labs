@@ -4,14 +4,9 @@
     <meta charset="UTF-8">
     <title>Лабораторная работа №2</title>
     <style>    
-    .output {
-            margin-top: 16px;
-            padding: 12px;
-            background: lch(50.71% 97.44 38.86);
-            border-radius: 6px;
-            min-height: 24px;
-        }
-        label {
+
+        label 
+        {
             display: inline-block;
             min-width: 140px;
             margin: 12px 0 4px;
@@ -20,11 +15,10 @@
         .output {
             margin-top: 16px;
             padding: 12px;
-            background: #e7f1ff;
+            background: hsl(0, 62%, 62%);
             border-radius: 6px;
             min-height: 24px;
         }
-    </style> 
     </style>
 </head>
 <body>
@@ -79,7 +73,7 @@
     <p>На плоскости заданы координаты трех точек. Площадь расчитается когда поле будет в фокусе</p>
     <form>
     <label>x₁:</label>
-    <input type="number" size="5"  id="x1" onfocus="calcTriangleArea()">  <br>
+    <input type="number" size="5"  id="x1" onfocus="calcTriangleArea()"><br>
     
     <label>y₁:</label>
     <input type="number" size="5"  id="y1" onfocus="calcTriangleArea()" > <br>

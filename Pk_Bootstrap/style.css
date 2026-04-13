@@ -1,0 +1,44 @@
+/* style.css */
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    padding: 20px 0;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+/* Общие стили для всех блоков */
+.block {
+    padding: 25px 15px;
+    margin-bottom: 15px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    min-height: 100px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Цвета блоков */
+.block-blue   { background-color: #337ab7; }
+.block-green  { background-color: #5cb85c; }
+.block-purple { background-color: #9460c4; }
+.block-orange { background-color: #f0ad4e; }
+
+/* Дополнительные отступы и оформление рядов */
+.row-1 .block { border-color: #25567d; }
+.row-2 .block { border-color: #3e7e3e; }
+.row-3 .block { border-color: #6f3e9e; }
+.row-4 .block { border-color: #d07c1e; }
+
+/* Адаптивные отступы */
+@media (max-width: 767px) {
+    .block {
+        margin-bottom: 10px;
+        padding: 20px 10px;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Праздники — Вертикальное меню</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Вертикальное меню -->
+        <nav>
+            <ul>
+                <li data-image="newyear">
+                    <img src="images/arrow.svg" class="arrow hide" alt="arrow">
+                    <a href="#">Новый год</a>
+                </li>
+                <li data-image="christmas">
+                    <img src="images/arrow.svg" class="arrow hide" alt="arrow">
+                    <a href="#">Рождество</a>
+                </li>
+                <li data-image="easter">
+                    <img src="images/arrow.svg" class="arrow hide" alt="arrow">
+                    <a href="#">Пасха</a>
+                </li>
+                <li data-image="halloween">
+                    <img src="images/arrow.svg" class="arrow hide" alt="arrow">
+                    <a href="#">Хэллоуин</a>
+                </li>
+                <li data-image="birthday">
+                    <img src="images/arrow.svg" class="arrow hide" alt="arrow">
+                    <a href="#">День рождения</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Область для отображения изображения -->
+        <div class="image-container">
+            <h2 id="holiday-title">Выберите праздник</h2>
+            <img id="holiday-image" src="" alt="Праздничное изображение"  onmouseover="startImageReduction()">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

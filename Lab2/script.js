@@ -17,7 +17,8 @@ function startTask2() {
     alert(`Радиус: ${radius} см\nПлощадь круга: ${area} см²`);
 
 }
-function calcTriangleArea() {
+function calcTriangleArea() 
+{
     const x1 = Number(document.querySelector('#x1').value) || 0;
     const y1 = Number(document.querySelector('#y1').value) || 0;
     const x2 = Number(document.querySelector('#x2').value) || 0;
